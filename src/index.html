@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/style.css" />
 </head>
 
@@ -15,17 +21,97 @@
             <img src="/img/homelogo.jpg" alt="logo" />
         </div>
         <div>
-            <span><br>HOME</span>
-            <span>SERVICES</span>
-            <span>ABOUT</span>
-            <span>PROJECTS</span>
-            <span>CONTACTS</span>
+            <a href="#services"><span><br>HOME</span></a>
+            <a href="#services"><span>SERVICES</span></a>
+            <a href="#services"><span>ABOUT</span></a>
+            <a href="#services"><span>PROJECTS</span></a>
+            <a href="#services"><span>CONTACTS</span></a>
         </div>
     </nav>
     <div>
-        <video loop autoplay class="portrait">
-            <source src="../img/portrait.mp4" />
-        </video>
+
+        <div>
+            <video loop autoplay class="portrait">
+                <source src="../img/portrait.mp4" />
+            </video>
+        </div>
+        <div class="title-video">
+            <h2>LEADERS IN QUALITY
+                <br>CONSTRUCTION AND
+                <br>INFRASTRUCTURE
+            </h2>
+            <a href="#services"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="center-title">
+            <h2>Services</h2>
+            <div class="yellow-bar"></div>
+        </div>
+        <div class="services-cards">
+            <div class="card">
+                <img src="../img/plano.jpg" alt="Plano" />
+                <div>
+                    <h3>Preconstruction <br>Planning</h3>
+                </div>
+                <div>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                        or double click me to add your own content and make changes to the font.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/maqueta.jpg" alt="maquita" />
+                <div>
+                    <h3>
+                        Architectural
+                        <br>Modelling
+                    </h3>
+                </div>
+                <div>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                        or double click me to add your own content and make changes to the font.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/drone.jpg" alt="drone" />
+                <div>
+                    <h3>Construction
+                        <br>Management
+                    </h3>
+                </div>
+                <div>
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text”
+                        or double click me to add your own content and make changes to the font.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="about">
+            <div>
+                <h2>ABOUT</h2>
+                <div class="yellow-bar"></div>
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                    double click me to add your own content and make changes to the font. Feel free to drag and drop me
+                    anywhere you like on your page. I’m a great place for you to tell a story and let your users know a
+                    little more about you.​This is a great space to write long text about your company and your
+                    services. You can use this space to go into a little more detail about your company. Talk about your
+                    team and what services you provide. Tell your visitors the story of how you came up with the idea
+                    for your business and what makes you different from your competitors. Make your company stand out
+                    and show your visitors who you are.
+                </p>
+            </div>
+            <div>
+                <img src="../img/construction-worker.jpg" alt="construction"/>
+            </div>
+        </div>
     </div>
 </body>
 
