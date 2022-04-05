@@ -13,6 +13,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/style.css" />
+
 </head>
 
 <body>
@@ -20,17 +21,20 @@
         <div>
             <img src="/img/homelogo.jpg" alt="logo" />
         </div>
-        <div>
+        <div class="nav-links">
             <a href="#services"><span><br>HOME</span></a>
             <a href="#services"><span>SERVICES</span></a>
             <a href="#services"><span>ABOUT</span></a>
             <a href="#services"><span>PROJECTS</span></a>
             <a href="#services"><span>CONTACTS</span></a>
+
+        </div>
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
     <div>
-
-        <div>
+        <div class="respondiv">
             <video loop autoplay class="portrait">
                 <source src="../img/portrait.mp4" />
             </video>
@@ -92,48 +96,48 @@
             </div>
         </div>
     </div>
-    <div>
-        <div class="about">
-            <div class="about-text">
-                <h2>ABOUT</h2>
-                <div class="yellow-bar"></div>
-                <p>
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
-                    double click me to add your own content and make changes to the font. Feel free to drag and drop me
-                    anywhere you like on your page. I’m a great place for you to tell a story and let your users know a
-                    little more about you.​This is a great space to write long text about your company and your
-                    services. You can use this space to go into a little more detail about your company. Talk about your
-                    team and what services you provide. Tell your visitors the story of how you came up with the idea
-                    for your business and what makes you different from your competitors. Make your company stand out
-                    and show your visitors who you are.
-                </p>
-            </div>
-            <div>
-                <img src="../img/construction-worker.jpg" alt="construction" />
-            </div>
+    <div class="about">
+        <div class="about-text">
+            <h2>ABOUT</h2>
+            <div class="yellow-bar"></div>
+            <p>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                double click me to add your own content and make changes to the font. Feel free to drag and drop me
+                anywhere you like on your page. I’m a great place for you to tell a story and let your users know a
+                little more about you.​This is a great space to write long text about your company and your
+                services. You can use this space to go into a little more detail about your company. Talk about your
+                team and what services you provide. Tell your visitors the story of how you came up with the idea
+                for your business and what makes you different from your competitors. Make your company stand out
+                and show your visitors who you are.
+            </p>
         </div>
+        <img src="../img/construction-worker.jpg" alt="construction" />
     </div>
     <div class="stats">
-        <div class="awards">
-            <h2>2023</h2>
-            <span>Year
-                <br>Established
-            </span>
+        <div class="line1">
+            <div class="awards">
+                <h2>2023</h2>
+                <span>Year
+                    <br>Established
+                </span>
+            </div>
+            <div class="divider"></div>
+            <div class="awards">
+                <h2>206</h2>
+                <span>Projects<br>Completed</span>
+            </div>
+            <div class="divider"></div>
         </div>
-        <div class="divider"></div>
-        <div class="awards">
-            <h2>206</h2>
-            <span>Projects<br>Completed</span>
-        </div>
-        <div class="divider"></div>
-        <div class="awards">
-            <h2>870</h2>
-            <span>Contractors<br>Appointed</span>
-        </div>
-        <div class="divider"></div>
-        <div class="awards">
-            <h2>26</h2>
-            <span>Award<br>Won</span>
+        <div class="line2">
+            <div class="awards">
+                <h2>870</h2>
+                <span>Contractors<br>Appointed</span>
+            </div>
+            <div class="divider"></div>
+            <div class="awards">
+                <h2>26</h2>
+                <span>Award<br>Won</span>
+            </div>
         </div>
     </div>
     <div class="projects">
@@ -208,10 +212,14 @@
             <div class="yellow-bar"></div>
         </div>
         <div class="client-logos">
-            <img src="../img/myteam.png" alt="myteam">
-            <img src="../img/construction.png" alt="myteam">
-            <img src="../img/homerenovation.png" alt="homerenovation">
-            <img src="../img/cons1979.png" alt="">
+            <div>
+                <img src="../img/myteam.png" alt="myteam">
+                <img src="../img/construction.png" alt="myteam">
+            </div>
+            <div>
+                <img src="../img/homerenovation.png" alt="homerenovation">
+                <img src="../img/cons1979.png" alt="">
+            </div>
         </div>
     </div>
     <div class="contact">
@@ -278,15 +286,15 @@
             </div>
         </div>
     </div>
-    <div class="chat-pop">
+    <div class="chat-pop" id="chat-button">
         <i class="fa-solid fa-comment-dots"></i>
     </div>
-    <div class="chat">
+    <div id="chatwindow">
         <div class="chat-head">
             <div>
                 <h2>HOME AND GARDEN</h2>
             </div>
-            <div class="close">
+            <div class="close" id="close">
                 <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="chat-online">
@@ -305,6 +313,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="../src/jsva.js"></script>
 </body>
 
 </html>

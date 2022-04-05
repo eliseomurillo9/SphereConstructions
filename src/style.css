@@ -41,13 +41,21 @@ nav a {
     text-decoration: none;
 }
 
+nav .menu-bar {
+    position: absolute;
+    display: none;
+    color: #FFF;
+    right: 20px;
+    top: 30px;
+}
+
 .position {
     position: relative;
 }
 
 .portrait {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: 2;
     object-fit: cover;
@@ -74,7 +82,7 @@ nav a {
 .services {
     background-color: #fff;
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 4;
     display: flex;
     flex-direction: column;
@@ -143,7 +151,7 @@ nav a {
     background-color: rgb(235, 233, 233);
     height: 90vh;
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 3;
     top: 975px;
     display: flex;
@@ -153,8 +161,7 @@ nav a {
 
 .about img {
     height: 90vh;
-    top: 450px;
-    right: 5px;
+    right: px;
     position: sticky;
     top: 500px;
 }
@@ -177,7 +184,7 @@ nav a {
 
 .stats {
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 3;
     top: 975px;
     display: flex;
@@ -212,10 +219,24 @@ nav a {
     padding: 50px
 }
 
+.stats .line1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats .line2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .projects {
     background-color: #fff;
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 3;
     top: 975px;
     display: flex;
@@ -269,6 +290,8 @@ nav a {
     justify-content: center;
     align-items: center;
     opacity: 100%;
+    background-color: rgb(253, 248, 248, 0.4);
+    z-index: 2;
 }
 
 
@@ -281,7 +304,6 @@ nav a {
 
 .projects .project1 img:hover {
     transform: scale(1.2);
-    opacity: 30%;
 
 }
 
@@ -501,7 +523,7 @@ nav a {
 .clients {
     background-color: rgb(235, 233, 233);
     height: 35vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     top: 975px;
     z-index: 3;
@@ -521,6 +543,11 @@ nav a {
     transition: 1s;
 }
 
+.clients .client-logos {
+    display: flex;
+    flex-direction: row;
+}
+
 .clients img {
     height: 120px;
     margin: 0 45px 0 45px;
@@ -536,7 +563,7 @@ nav a {
 .contact {
     background-color: #fff;
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 4;
     display: flex;
     flex-direction: column;
@@ -546,7 +573,7 @@ nav a {
     padding-bottom: 100px;
 }
 
-.contact h2{
+.contact h2 {
     font-family: poppins;
     font-size: 65px;
     margin-top: 40px;
@@ -561,8 +588,8 @@ nav a {
     margin-top: 40px;
 }
 
-.inqueries{
-   margin-right: 55px;
+.inqueries {
+    margin-right: 55px;
 }
 
 .inquiries-head h3 {
@@ -578,7 +605,7 @@ nav a {
     text-align: left;
 }
 
-.inquiries-head p{
+.inquiries-head p {
     text-align: left;
     font-family: poppins;
     margin-top: 25px;
@@ -590,23 +617,24 @@ nav a {
     flex-direction: column;
 }
 
-.inquiries-head .contact-us span{
+.inquiries-head .contact-us span {
     margin: 15px 0 4px 0;
 
 }
 
-.inquiries-head .contact-us input{
+.inquiries-head .contact-us input {
     padding: 5px 0 5px 0;
 }
 
-.inquiries-head .contact-us .submit{
+.inquiries-head .contact-us .submit {
     display: flex;
     flex-direction: row;
     justify-content: end;
     margin-top: 5px;
-    
+
 }
-.inquiries-head .contact-us .submit button{
+
+.inquiries-head .contact-us .submit button {
     width: 120px;
     height: 40px;
     background-color: #473924;
@@ -616,11 +644,11 @@ nav a {
     cursor: pointer;
 }
 
-.head-office{
+.head-office {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   margin-left: 55px;
+    margin-left: 55px;
 
 }
 
@@ -632,7 +660,7 @@ nav a {
     margin-top: 135px;
 }
 
-.chat-pop{
+.chat-pop {
     position: fixed;
     z-index: 4;
     bottom: 2%;
@@ -647,7 +675,7 @@ nav a {
     cursor: pointer;
 }
 
-.chat-pop i{
+.chat-pop i {
     color: #f0c01e;
     font-size: 40px;
     -webkit-text-stroke-width: 2px;
@@ -655,24 +683,25 @@ nav a {
 }
 
 
-.chat{
+.chat {
     position: fixed;
     z-index: 4;
-    bottom: 2%;
-    right: 1%;
+    bottom: 0%;
+    right: 0%;
     background-color: #f0c01e;
     width: 300px;
-    
+    transition: all 0.2ms ease-in-out;
+    transform: translate(-19px, -19px);
 }
 
-.chat .chat-head{
+.chat .chat-head {
     background-color: rgb(6, 15, 48);
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.chat .chat-head h2{
+.chat .chat-head h2 {
     font-family: poppins;
     font-weight: 600;
     color: #FFF;
@@ -680,7 +709,7 @@ nav a {
     margin: 15px 0 0 25px;
 }
 
-.chat .chat-head .close{
+.chat .chat-head .close {
     position: absolute;
     right: 10px;
     bottom: 25px;
@@ -688,7 +717,8 @@ nav a {
     font-weight: 110;
     cursor: pointer;
 }
-.chat .chat-head .chat-online{
+
+.chat .chat-head .chat-online {
     display: flex;
     flex-direction: row;
 
@@ -697,41 +727,44 @@ nav a {
 
 
 
-.chat .chat-head .chat-online p{
- font-family: poppins;
- font-weight: 30;
- font-size: 12px;
- color: #fff
+.chat .chat-head .chat-online p {
+    font-family: poppins;
+    font-weight: 30;
+    font-size: 12px;
+    color: #fff
 }
 
-.chat .chat-head .chat-online .dot{
+.chat .chat-head .chat-online .dot {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3px;
 }
-.chat .chat-head .chat-online i{
+
+.chat .chat-head .chat-online i {
     color: green;
     font-size: 10px;
     margin: 0 10px 15px 25px;
 }
 
-.chat .message-space{
+.chat .message-space {
     height: 400px;
 }
 
-.chat .write{
+.chat .write {
     display: flex;
     flex-direction: row;
 }
 
-.chat .write input{
+.chat .write input {
     width: 270px;
     padding: 10px 0 10px 0;
+    font-family: poppins;
+    font-size: 15px;
 }
 
-.chat .write .send{
+.chat .write .send {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -739,6 +772,330 @@ nav a {
     width: 30px;
     border: 0.1px solid rgb(57, 57, 57);
 }
-.chat .write i{
+
+.chat .write i {
     font-size: 25px;
+}
+
+
+
+@media (max-width: 900px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+
+    nav {
+        width: 100vw;
+    }
+
+    nav .nav-links {
+        position: fixed;
+        background-color: rgb(6, 15, 48);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        opacity: 0%;
+        padding: 0%;
+        margin: 0%;
+        top: 0%;
+        left: 0%;
+    }
+
+    nav .nav-links a {
+        padding-top: 10px;
+    }
+
+    nav .menu-bar {
+        display: block;
+        font-size: 25px;
+    }
+
+
+
+    .portrait {
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+
+
+    .title-video {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: 35px;
+    }
+
+
+    .services {
+        width: 100%;
+        top: 0%;
+    }
+
+    .services .center-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+
+    .services .center-title h2 {
+        margin-top: 5%;
+        font-size: 50px;
+    }
+
+    .services .services-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .services .services-cards .card {
+        margin-bottom: 25px;
+
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+    }
+
+    .about-text {
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .about .about-text h2 {
+        font-size: 45px;
+        padding: 30px 30px 0 30px;
+    }
+
+    .about .about-text p {
+        padding: 0 30px 20px 30px;
+    }
+
+    .about .about-text .yellow-bar {
+        margin-left: 30px;
+    }
+
+    .about img {
+        position: relative;
+        top: 0%;
+        width: 100vw;
+        height: auto;
+    }
+
+    .stats {
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .stats .line1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stats .line2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .projects :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .projects :nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .projects .project1 {
+        height: 350px;
+        width: 350px;
+        margin: 0
+    }
+
+    .projects .project1 img {
+        width: 350px;
+    }
+
+    .projects .project2 {
+        margin: 20px 0 0 0;
+        height: 350px;
+        width: 350px;
+
+    }
+
+    .projects .project2 img {
+        width: 350px;
+
+    }
+
+    .projects .project3 {
+        height: 350px;
+        width: 350px;
+        margin: 20px 0 0 0;
+    }
+
+    .projects .project3 img {
+        width: 350px;
+    }
+
+    .projects .project4 {
+        margin: 20px 0 0 0;
+        height: 350px;
+        width: 350px;
+
+    }
+
+    .projects .project4 img {
+        width: 350px;
+
+    }
+
+    .clients {
+        background-color: rgb(235, 233, 233);
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15%;
+        top: 0%;
+    }
+
+    .clients h2 {
+        font-size: 45px;
+    }
+
+    .client-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .client-logos:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .client-logos:nth-child(2){
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clients img {
+        height: 70px;
+        padding: 15px;
+        margin: 0%;
+
+    }
+
+    .contact {
+        top: 0%;
+    }
+
+    .contact h2 {
+        font-size: 45px;
+    }
+
+    .contact iframe {
+        width: 100vw;
+        height: 300px;
+    }
+
+    .inquiries-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .inquiries-head .inqueries {
+        width: 80%;
+    }
+
+    .inquiries-head .inqueries h3 {
+        font-size: 30px;
+    }
+
+    .inquiries-head .inqueries p {
+        font-size: 1.2rem;
+    }
+
+    .inquiries-head .inqueries .contact-us span {
+        font-size: 15px;
+    }
+
+    .head-office {
+        margin-left: 7%;
+    }
+
+    .head-office h3 {
+        font-size: 30px;
+    }
+
+    .head-office p {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .chat-pop {
+        bottom: 0%;
+        right: 10%;
+        margin: 0;
+        z-index: 5;
+    }
+
+
+
+    .yellow-bar {
+        height: 10px;
+    }
 }
