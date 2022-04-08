@@ -60,15 +60,14 @@ nav .menu-bar {
 }
 
 .title-video {
-    position: absolute;
-    left: 30%;
-    top: 35%;
+    position: relative;
     color: #FFF;
     text-align: center;
     justify-content: center;
     font-size: 50px;
     font-family: poppins;
     line-height: 1;
+    padding-top: 300PX;
     z-index: 3;
 }
 
@@ -86,7 +85,7 @@ nav .menu-bar {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    top: 985px;
+    top: 400Px;
     padding-bottom: 100px;
     padding-top: 25px;
 }
@@ -152,7 +151,7 @@ nav .menu-bar {
     position: relative;
     width: 100%;
     z-index: 3;
-    top: 975px;
+    top: 400Px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -185,7 +184,7 @@ nav .menu-bar {
     position: relative;
     width: 100%;
     z-index: 3;
-    top: 975px;
+    top: 400Px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -237,7 +236,7 @@ nav .menu-bar {
     position: relative;
     width: 100%;
     z-index: 3;
-    top: 975px;
+    top: 400Px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -525,7 +524,7 @@ nav .menu-bar {
     height: 35vh;
     width: 100%;
     position: relative;
-    top: 975px;
+    top: 400Px;
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -569,7 +568,7 @@ nav .menu-bar {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    top: 975px;
+    top: 400Px;
     padding-bottom: 100px;
     padding-top: 25px;
 }
@@ -799,11 +798,11 @@ nav .menu-bar {
         align-items: center;
         height: 100vh;
         width: 100%;
-        opacity: 0%;
         padding: 0%;
         margin: 0%;
         top: 0%;
         left: 0%;
+        
     }
 
     nav .nav-links a {
@@ -833,7 +832,10 @@ nav .menu-bar {
         justify-content: center;
         align-items: center;
         text-align: center;
-        left: 35px;
+        position: absolute;
+        padding-top: 0%;
+        top: 40vh;
+        left: 10vw;
     }
 
 
