@@ -5,11 +5,12 @@ const nav = document.querySelector('#navs');
 const naves = nav.querySelectorAll('div.nav-links > a');
 const options = document.querySelector('.nav-links')
 const menu = document.getElementById('menu');
-
+const size = document.documentElement.clientWidth || window.innerWidth;
 
 
 button.addEventListener('click', function (_event) {
     chat.classList.add('chat')
+    chat.style.display = 'block'
     button.style.display = 'none'
 });
 
@@ -18,7 +19,7 @@ closePop.addEventListener('click', function (_event) {
     button.style.display = 'flex'
 });
 
-menu.addEventListener('click', function(e){
+menu.addEventListener('click', function (e) {
     options.style.display = 'flex'
 })
 
@@ -29,16 +30,19 @@ naves.forEach(a => {
         if (this.hash !== '') {
             e.preventDefault
         };
-         const hash = this.hash
+        const hash = this.hash
 
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         }, 800);
 
-        options.style.display = 'none'
+        if (size <= 900) {
+            options.style.display = 'none'
+        }
 
     })
 })
+
 
 
 

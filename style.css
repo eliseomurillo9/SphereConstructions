@@ -4,6 +4,26 @@
     scroll-behavior: smooth;
 }
 
+.flag{
+    background-color: black;
+    color: #FFF;
+    font-family: poppins;
+    text-align: center;
+    font-weight: 200;
+    font-size: 13px;
+    position: fixed;
+    height: 20px;
+    width: 100vw;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flag a{
+    text-decoration: underline;
+    color: #FFF;
+}
 
 nav {
     background-color: rgb(1, 19, 34);
@@ -14,6 +34,7 @@ nav {
     width: 100%;
     height: 75px;
     z-index: 5;
+    top: 15px;
 }
 
 nav img {
@@ -785,7 +806,9 @@ nav .menu-bar {
         padding: 0%;
     }
 
-
+    .flag{
+        font-size: 10px;
+    }
     nav {
         width: 100vw;
     }
@@ -1097,6 +1120,9 @@ nav .menu-bar {
         z-index: 4;
     }
 
+    #chatwindow{
+        display: none;
+    }
 
 
     .yellow-bar {
